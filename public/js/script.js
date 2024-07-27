@@ -42,24 +42,24 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-//gambarrrr 
-document.addEventListener('DOMContentLoaded', function() {
-const parallax = document.querySelector('.parallax');
-const images = [
-    'img/bg1.jpg',
-    'img/bg2.jpg',
-    'img/bg3.jpg'
-    // Tambahkan URL gambar lainnya sesuai kebutuhan
-];
-let currentIndex = 0;
+// //gambarrrr 
+// document.addEventListener('DOMContentLoaded', function() {
+// const parallax = document.querySelector('.parallax');
+// const images = [
+//     'img/bg1.jpg',
+//     'img/bg2.jpg',
+//     'img/bg3.jpg'
+//     // Tambahkan URL gambar lainnya sesuai kebutuhan
+// ];
+// let currentIndex = 0;
 
-function changeBackground() {
-    currentIndex = (currentIndex + 1) % images.length;
-    parallax.style.backgroundImage = `url('${images[currentIndex]}')`;
-}
+// function changeBackground() {
+//     currentIndex = (currentIndex + 1) % images.length;
+//     parallax.style.backgroundImage = `url('${images[currentIndex]}')`;
+// }
 
-setInterval(changeBackground, 4000); // Ubah setiap 5 detik
-});
+// setInterval(changeBackground, 4000); // Ubah setiap 5 detik
+// });
 // produk
 document.addEventListener('DOMContentLoaded', function () {
 const productCards = document.querySelectorAll('.product-card');
