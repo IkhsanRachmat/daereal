@@ -246,6 +246,26 @@
             once: true,
         });
     </script>
+    <script>
+        //gambarrrr 
+        document.addEventListener('DOMContentLoaded', function() {
+        const parallax = document.querySelector('.parallax');
+        const images = [
+            'public/img/bg1.jpg',
+            'public/img/bg2.jpg',
+            'public/img/bg3.jpg'
+            // Tambahkan URL gambar lainnya sesuai kebutuhan
+        ];
+        let currentIndex = 0;
+
+        function changeBackground() {
+            currentIndex = (currentIndex + 1) % images.length;
+            parallax.style.backgroundImage = `url('${images[currentIndex]}')`;
+        }
+
+        setInterval(changeBackground, 4000); // Ubah setiap 5 detik
+        });
+    </script>
     <script src="public/js/script.js"></script>
 </body>
 </html>
